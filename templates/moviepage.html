@@ -1,0 +1,154 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/moviepage.css')}}">
+  <link rel="icon" href="{{url_for('static',filename='images/favicin.ico')}}">
+  
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#home">Home</a>
+        <a href="#tvShows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Originals</a>
+        <a href="#">Recently Added</a>
+               
+      </nav>
+      <nav class="sub-nav">
+        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+        <a href="#">Account</a> 
+        <a href="{{ url_for('logout') }}">Logout</a>       
+      </nav>      
+    </header>
+    <!-- END OF HEADER -->
+  
+    <!-- MAIN CONTAINER -->
+    <section class="main-container" >
+      
+      <div class="location" id="home">
+          <h1 id="home">Popular on Netflix</h1>
+          <div class="box">
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Nwce9WwkcMg"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTs03Z8h178EvzL4CBflHX25sKOvv42r9nBqDG4Bu9MCzxJMgholIb-m1rLizQBIaQyCCYZIdX5wTCNdPilhnypPzWlxu06WtePO.jpg?r=87a" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/tF1JN2pT_sM"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZAUJyh74gbiRP-o8CM5rced9iqaCd5XXF2hBnLqroHmHhTdAp1Y1KfjbhxUJ3xvSB-QplYnxb-B_Dzn6E7uQ1z_xMxhFTPKYRXZ.jpg?r=033" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/JrdixTnMl8E"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABReUTpSwp8Pqgkk_vp3KdEUnREWN7QIp5MXhI2PExQQNrm6bgWaBOo_h5HL0tcHcwe4Cc89L4eNe3BF7BjcClIW9ZXy-7JpJpdpd.jpg?r=e61" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/ahttNxGnLsQ"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABf7s6cb8CxT04ndy3v7GpBnGKMaVlKiH60vWTMc6_ycMSyB6osApb_WOihNw3Oh43xfXpzy7HKPqTsNdijtTu_A8ss9c8A3MJGVK.jpg?r=237" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/uGXB1PFg7E0"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ4NzdgpzKCWjPGjh-_vZZfy3nggTDEPH7WE-6Sl1KmnrJ62BNw5SBvaspoF5TLCYQMQCqunvIAQPfnNoDyXJ19ikakQ9HXAf9zYL-lOmt4LeVeFR8ms1dOIdblTAXKX3lpdxA.jpg?r=856" alt=""></a>
+    
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/fhr3MzT6exg"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfLHKSIIbMrx9fUmaSMrO90Y2b6ETdxZgs1hltpzt8QJ-cvLLzCCW3G5QPaPo0kO8YIQiX2tncRKYZEDvuUCigBfZvvTwR7176X6Yl8Ssl_EbqenkwX9a4-53CCiNx3Okn8QoA.jpg?r=524" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/lAVYll_wBeY"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUODWbvmPMw6CesYWbtHA1sk2UQRkk_fQRsf126V8OEt2b9kpXcj3-1sY7v3fZbD0cmBKfjy8EomlEg5VyC4QJ6f1kHrv2XuaJVl.jpg?r=804" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Q6gY245rQ0Y"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABe0XRCw47QteT6689_YBgkco_A84q1yx669-dv6sSiEgnhkwJYW9zFZT0hylSMyuA7YCnhjmdIy7SVEos-aHkudcL3O7F0P3u4tv.jpg?r=a03" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/WuH9ahB-68Q"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdWkh_9Jfe0gb_TVHgLx3m9busdd2feilXaBu9T8_Nhl0NuOrNrkuyK9UTNPH2MWgCzj27yyzvt2bpDr7HvoIsfqB-Xo7My8c99l.jpg?r=434" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/BO0BDQEslwQ"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQJN9a8EwDOq8JqjaBpTDxdUaLOd0gaeBkn0SrBLYhBw6R3-9vUahm7tDjTWle1hfzVoWPnV1oiwpjN6hZZuY2YdJ74lPThvcHHo.jpg?r=601" alt=""></a>
+            <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/iJkspWwwZLM"><img src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfmyknQ-98lJeZvYdSO_xvd8KLHRNsbJPnm_35Gg50rmP-AOVppq7OxazY5lcO0vGcUAVrCMoKKkBXyxhWjCQqJKZ_Kz6cLeVNhj.jpg?r=215" alt=""></a>        
+          </div>
+      </div>
+      
+
+      <h1 id="myList">Trending Now</h1>
+      <div class="box">
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Pr2jBvbiy04"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa-Avj1WboxQl4-usCkCWs1EZAan0xkYxwFTtkbxK_NC2y6uwSIGWCy-0n6p_5FngUBHyIrcb_xxUOB5mS-cghyn4wPkxq2OuPE.jpg?r=66a" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/WvzZYynDkwA"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVx9XeGF_87h4odP_kFwqC8-piPPbFyxiUQLZzG97sPE_L6_40jVHVjTMpnCSLh5SsVFqmwKZ5buXfiiFgZ--XFugjYGO_r00UPk7cxQtKsb1q_q90sxX31vLgvXAwLFNc-VtgeShro6FRBjIctmxmOD0nzVvWd3sekSdM9hUrThqy-LNLjAMWAYSh5_n5A.jpg?r=66f" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/MWOlnZSnXJo"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABetoGk0CLIkPxKr6MMuFswl25hF_gsw1TIvJakiPx32KBAPxk4wVqHDMPX2vPjBXdHr45GtWlm7ARQUlBfkMhQZ6v1akZbdncW8.jpg?r=cfe" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Y6ZKXqM7HNQ"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeuxairVzLlMC2hvzQ00VUkzHfpWpewSc8729B_xvkRUsGV4rBVlc718ugnKnk7zbbyADvCIztxD7fTcnJyhYfroAMZny1aGTXA.jpg?r=62d" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Zd69FfhBmSc"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfF6DDP9H0k3knc4_Uh2-SECtSrqoG6SQmvrWAmf12GWPRHP--iiQclbKu6xhsdzYz4_BTBj7g3LJWlcOK7P-3AUUNgdeerNUfk.jpg?r=e65" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/q8M6Ybjr2Wc"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb41Q54VbC8CzPA2XHmhMR6h8XcuNFsmnl_8yMPeSSVZhrDFnigoUA9UVfKLJdN3Iu0mrDBBCk5d3nhbMT04Hgre4Bk1zxOK_pY.jpg?r=c40" alt=""></a>                  
+      </div>
+      
+      <h1 id="tvShows">TV Shows</h1>
+      <div class="box">
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/2gTC4uWP3_Y"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYbIrcqCq1bpp0fwlFkHF3gWxbJMNtFfJvZQAqn4ldLErMpDHqukSBHD-yNns8XcksLf6nkdQUdTYS-BbKUwFr6FAW-RQMrBkSA.jpg?r=9ff" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/eafm1gB6SCM"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUlPj2Dw-BYlc-d3Z-Jh6h76AlRXRNheKfW17wi1klmZSWVSUImhg8QKn0TuA4lINKQyjfc-a5lwfDA1RJibkmlUwL0K6dZKftSNPFv1fp4sTk1cTyQqa4xpqozmVIGhO22lr-Lyt9-KGD2c-yFETbzS7iA0bPXceZdLA6Gz73tEg_6SurFXtHba420-ODBF_2Djrbhn_FMrWN2Gt07K8duZNtec-oJC319Ih5cyOq6zcQtTGoPy6r8LbsTs7rIwUYF92b9FPyivsvkARf4IIM22KaIC2dVuPLYSXSkQD05o3zAsV01960Guv1znvo7LhvvnQcA62Lt84SSFBWSGN9lTp3UsEsWcDgiA0Pksn-JWsMEc25U.jpg?r=3ac" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Yi4YnwFT7Gk"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXFIXbzzrhgKDE5HzOnDSlFEB0lwL2G5jRhWmgwyoP6KevXbXw_zC_4TikgPe7qDokxxQjN2Ao6QQySmXc56m38Di59Vnwo0A9M.jpg?r=2f0" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/yFmy5lXoEfU"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRhDTkXn2TZJyfO75wUvYkUxHropoboQUvHNUUZrpDEiS0e7KK7k0K5EFLtPi95m7D8xFgvzxJs8rIffcyX42yicBUuneWLPtQ6iLGgLPdWmFv51B_KAXIk8gEFPs-5ZveYa.jpg?r=13e" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Ks7Aj-l26cc"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABarxo0lDekmf3PQAHHsO4x3eb9AS2cXMvqTdI7DGSbsA-1R1oI1EJmPrv96RFYar9QcgPZP_lHbyuVy0fmxdWhTncFrJdk5AxBwocnP-dzviYfZMqcE94IDorJ-nUEl5hcIl.jpg?r=7c1" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/_InqQJRqGW4"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUmLgKmFrl2Tq5jDmIBIdp-L6_fRFsTE7KslWARHa4Yb8f8q32MOBiACOoYAGFn4k8Pc_1P7QlN-F41Btkx4q8bp2gg0yA4kCWxamkIcyRVtyIoln6PDWQVi1_IAZHe4PALj.jpg?r=326" alt=""></a>
+
+        <!--<a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv7.PNG?raw=true" alt=""></a>
+        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv8.PNG?raw=true" alt=""></a>
+        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv9.PNG?raw=true" alt=""></a>
+        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv10.PNG?raw=true" alt=""></a>
+        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv11.PNG?raw=true" alt=""></a>
+        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv12.PNG?raw=true" alt=""></a> -->             
+      </div>
+      
+
+      <h1 id="movies">Blockbuster Action & Adventure</h1>
+      <div class="box">
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/X0tOpBuYasI"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQALIg8xyXGoJjuv46AGq8M4-nf7V_gOAhL59Il4OUexsD4cABrSWarSzDbY6xoXQKRZrQcpDatwMtKd6HfKcnx3GSNH7CHX7xA.jpg?r=a31" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/q8M6Ybjr2Wc"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb41Q54VbC8CzPA2XHmhMR6h8XcuNFsmnl_8yMPeSSVZhrDFnigoUA9UVfKLJdN3Iu0mrDBBCk5d3nhbMT04Hgre4Bk1zxOK_pY.jpg?r=c40" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/iM150ZWovZM"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRhybUqTpg08T8TnfSlW1TPvVx4rMoeyARJusNHmFijC4KWeaoSl9QSkEFSlLFXCZC4pITSugdJhfWa1jkM8Ina1EMepcEIntBvhg4f1kvs3f51AEJbfEFSx6B718Jng8r3j.jpg?r=e0f" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/Sko0o_KoBHY"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQW83iVDiTlJEIOuhTBEXZfBPf6LLi58JnKrfL-waACM-Qb59Sw3l9CyRPjZ2TgUeowjoE9LYg5uAgdsbC_CuGugarN0aDNb0_E.jpg?r=3c8" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/i3A0ptNnC5s"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABV-YkBgVaHdXqv-AIbUgAdBihqF397fQi6P7eD2sWy83LgVJsVf9yW1h1FaUyV2T-KxgiL494vJMT-3eB8eWGsZW2CcJ2_Tt0cs.jpg?r=00d" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/U2Qp5pL3ovA"><img src="https://occ-0-4857-2164.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYlMwwSy1Tt8JCUAVLnygg4Aji4VMPo-Gv7QGkz4bvNN3Y1ZivkG9AHSfLaawj5zl0LzmygZS7UuismPbHctu5Ld4G57Zgq-GLU.jpg?r=1e3" alt=""></a>                
+      </div>
+
+      <h1 id="originals">Netflix Originals</h1>
+      <div class="box">
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/WqXAPoC_nTU"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/76L9aPDUD0E"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o2.PNG?raw=true" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/7DBKS2qH51I"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o3.PNG?raw=true" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/VZn6G0M9wNs"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o4.PNG?raw=true" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/5fKn0Dhj64w"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o5.PNG?raw=true" alt=""></a>
+        <a href="" onclick="playVideo(this)" data-video="https://www.youtube.com/embed/vzVhPCMAxWQ"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o6.PNG?raw=true" alt=""></a>                
+      </div>
+      <div id="videoPlayer"></div>
+    </section> 
+    <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class="link">
+      <div class="logos">
+        <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+      </div>
+      <div class="sub-links">
+        <ul>
+          <li><a href="#">Audio and Subtitles</a></li>
+          <li><a href="#">Audio Description</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- END OF LINKS -->
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy 1997-2018 Netflix, Inc.</p>
+      <p>Carlos Avila &copy 2018</p>
+    </footer>
+  </div>
+  <script>
+    function playVideo(image) {
+      var videoURL = image.getAttribute("data-video");
+      window.open(videoURL, "_blank");
+    }
+  </script>
+  
+  
+</body>
+</html>
